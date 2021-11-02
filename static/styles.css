@@ -1,0 +1,27 @@
+
+body {
+  background-color: powderblue;
+}
+
+
+h1{
+
+  color: purple;
+  font-family: "Monico", monospace;
+  font-size: 300%;
+}
+
+input {
+  margin: 5px;
+}
+
+label {
+  margin: 5px;
+}
+
+.author {
+  margin-top: 0px;
+  font-size: 14px;
+  font-style: italic;
+  color: rgb(52, 135, 163);
+}

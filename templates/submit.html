@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Submit a Message:{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+  <form method="post" enctype="multipart/form-data">
+    <label for="name">Enter your name</label><br>
+    <input type="text" name="name" id="name"><br>
+
+
+    
+    <label for="message">What's your message?</label><br>
+    <input type="text" name="messaage" id="message">
+    <input type="submit" value="Submit a message to the message table">
+  </form>
+
+  {% if name and message %} 
+    <br>
+    <p>Thanks for submitting a message, {{name}}! Your message is recorded: {{message}}.</p>
+  {% else %}
+    <br>
+    <p>Enter all required fields.</p> 
+  {% endif %}
+{% endblock %}

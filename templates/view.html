@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Message Table{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+    <b>Message table entries</b>
+<ul>
+    {% for m in messages %}
+        <b>{{m.0}}</b><br> <!--prints out the message in bold-->      
+        <i>{{m.1}}</i> <!-- italicize our name-->
+        <br>
+    {% endfor %}
+</ul>
+{% endblock %}
